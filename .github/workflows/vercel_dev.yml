@@ -1,0 +1,16 @@
+name: Deploy to Vercel Preview
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to Vercel
+        uses: BetaHuhn/deploy-to-vercel-action@v1
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
