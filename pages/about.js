@@ -5,7 +5,7 @@ const about = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 flex items-start justify-center py-10 px-2">
       <div className="w-full max-w-3xl bg-white rounded-xl shadow-lg p-10">
         <h1 className="text-4xl font-extrabold text-purple-700 mb-4 text-left">
-          About Hunting Coder
+          About Hunting Coder test branch
         </h1>
         <p className="text-lg text-gray-700 mb-8 text-left">
           Welcome to Hunting Coder! This project is a modern blog platform built
